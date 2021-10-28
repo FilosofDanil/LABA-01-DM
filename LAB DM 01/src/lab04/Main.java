@@ -5,8 +5,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int[] a = new int[5];
-        int[] b = new int[6];
+        Scanner m = new Scanner(System.in);
+        Scanner n = new Scanner(System.in);
+        System.out.print("Довжина А ");
+        int[] a = new int[length(m)];
+        System.out.print("Довжина В ");
+        int[] b = new int[length(n)];
         Scanner m = new Scanner(System.in);
         Scanner n = new Scanner(System.in);
         System.out.print("Масив A ");
