@@ -92,7 +92,7 @@ public class Task1 implements Tasks {
                 c1[j + r][0] = a[i];
                 c1[j + r][1] = b[j];
             }
-            r += 6;
+              r += b.length;
         }
         return c1;
     }
