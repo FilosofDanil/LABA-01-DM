@@ -16,6 +16,10 @@ public class Task34 implements Tasks {
         and(a1,b1);
         or(a1,b1);
         xor(a1,b1);
+        System.out.print("A-B ");
+        razn(b1,a1);
+        System.out.print("B-A ");
+        razn(a1,b1);
     }
 
     private static void or(int[] b1, int[] a1) {
@@ -69,6 +73,19 @@ public class Task34 implements Tasks {
         vivid(tobit(bit));
      result(c1);
     }
+    
+     private static void razn(int[] b1, int[] a1){
+        int[]bit=new int[8];
+        for (int i = 0; i < U.length; i++) {
+            if (a1[i] == 1 &&  b1[i]!=1) {
+                c1[i] = U[i];
+            }
+            bit[i]=c1[i];
+        }
+        vivid(tobit(bit));
+        result(c1);
+    }
+
 
     private static void result(int[] c) {
         for (int i = 0; i < c.length; i++) {
